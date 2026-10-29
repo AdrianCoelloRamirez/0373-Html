@@ -1,0 +1,50 @@
+:root {
+    --bg-footer-header: rgb(84,120,193);
+    --text-footer-header: white;
+    --bg-section: rgba(210,223,251, 0.8);
+    --text-section: rgb(73,105,169);
+    --hover-bg: rgb(10,15,24);
+    --hover-text: white;
+    --link-active: black;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+h2:firs{
+      
+ }
+
+h3 {
+    font-size: 1,3rem;
+} 
+footer,header {
+    background-color: var(--bg-footer-header);
+    color: var(--text-footer-header);
+}
+
+section{
+    background-color: var(--bg-section);
+    color: var(--text-section);
+}
+
+section:first-of-type:hover,
+article:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-text);
+}
+
+a:active{
+    color: var(--link-active);
+}
+
+span {
+    font-weight: bold;
+}
+
+article:last-of-type > p {
+    font-style: italic;
+}

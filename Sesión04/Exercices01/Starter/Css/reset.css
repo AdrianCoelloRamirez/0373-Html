@@ -1,0 +1,29 @@
+/* ================================= */
+/* CSS Reset Moderno Básico          */
+/* ================================= */
+
+/* 1. Usar un modelo de caja más intuitivo para todos */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Eliminar los márgenes por defecto del cuerpo y otros elementos */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Evitar desbordamientos de imágenes y multimedia */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 4. Heredar fuentes en formularios y botones */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Suavizar la renderización de texto */
+body {
+  -webkit-font-smoothing: antialiased;
+}
