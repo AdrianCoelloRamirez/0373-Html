@@ -1,0 +1,58 @@
+html{ 
+    background-color: white;
+     background-image: url(https://wallpapers.com/images/hd/squirtle-pokemon-character-illustration-8l94yqfhxa9j57wk.jpg);
+    /* background-image no repeat, para q no se copieo que solo
+    se repita en linea background image repeat -> o
+    background-position: center center */
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+
+    /* direction:rtl buscar */
+}
+
+div {
+    font-size: 3rem;
+    border: 4px solid blue;
+
+    border-width: 6px;
+
+    border-left-width: 30px;
+
+    margin-inline-start: 4em; 
+    /* Tambien se podria usa margin-left-widht pero se diferencian en que el left siempre
+    lo deja anclado en el left*/
+    padding: 1em 2em;
+
+    border-radius: 5px;
+    border-top-left-radius: 100px;
+
+    box-shadow: 0px 0px 100px 0px yellow;
+    /* 'color' inset para q las sombras esten dentro de la caja */
+
+    width: 300px;
+    height: 300px;
+}
+
+span {
+    display:block;
+    /* buscar q es */
+    border-width: 6px;
+    border-color: purple;
+    border-style: solid;
+    padding: 3em;
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+    margin-inline: auto;
+    /* buscar q es */
+}
+
+.violetas{
+    display: inline-block;
+    background-color: violet;
+    height: 20px;
+    border-radius: 10px;
+}
