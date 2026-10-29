@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Adrian/Web/mi-primera-web"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mi-proyecto"
+	}
+}

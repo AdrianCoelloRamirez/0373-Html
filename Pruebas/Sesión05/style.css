@@ -1,0 +1,80 @@
+body{
+    font-family: monospace;
+    background-color: rgb(76, 76, 76);
+    color: rgb(186, 186, 186)
+}
+
+header{
+    display: flex;
+    background-color: rgb(81,32,127);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+section.hero{
+    height: 100vh;
+}
+header > nav > ul {
+    display:flex; 
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+a {
+    color: white;
+    /* margin-left: 1em; */
+}
+
+main > h2 {
+    margin: 3em;
+}
+
+section.catalog {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0 3em; */
+    gap: 1em;
+    align-items: flex-start;
+}
+article {
+    border: 3px solid purple;
+    max-width: 200px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1em;
+    
+}
+
+article > a {
+    align-self: flex-end;
+}
+
+.shiny {
+    order: -1;
+    background-color: rgb(1, 77, 77);
+    color: cyan;
+
+    outline:  5px solid gold;
+}
+
+article:hover {
+    outline: 5px solid rgb(216, 91, 216);
+    outline-offset: 5px;
+    box-shadow: 0 0 10px 0 violet;
+    transform: scale(1,2);
+}
+
+article > a:hover {
+    color: yellow;
+    text-decoration: underline;
+}

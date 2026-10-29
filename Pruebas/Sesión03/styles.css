@@ -1,0 +1,38 @@
+    ¨*{
+        background-color: antiquewhite;
+    }
+    body{
+    color:  red;
+        font-size: 50px;
+        font-family:Orbitron 
+    }
+    h1{
+        color: aqua;
+        line-height: 200px;
+        font-style: italic;
+    }
+
+    h1:hover{
+        color: black;
+    }
+    .contenido h2:active{
+        color: black;
+    }
+    p{
+        background-color: blueviolet;
+    }
+    .logo{
+        font-weight: 400;
+        color: blue;
+    }
+    .contenido h2{
+        background-color: black;
+    }
+    .important{
+        border: 10px dashed gold;
+    }
+
+    #logo{
+        color: aqua;
+    }
+   
