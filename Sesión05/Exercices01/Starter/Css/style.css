@@ -5,16 +5,17 @@
   --fourth-color: #2E120C;
 }
 * {
-  box-sizing: border-box;
+   box-sizing: border-box; 
+   /* Incluye el padding y el borde dentro del tamaño total del elemeto */
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /*Establece el tipo de letra*/
   background-color: var(--second-color); /* #FCEEEB; */
 }
 h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 2rem; /* Establece el tamaño del texto */
+  font-weight: bold; /* Pone el texto en negrita */
+  margin-bottom: 1rem; /* Añade espacio debajo del título */
 }
 nav {
   background-color: var(--third-color); /* #752E20; */
@@ -23,10 +24,8 @@ nav {
 nav#vertical { width: 20vw; }
 nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;   /* Alineación vertical */
-  list-style: none;
+  flex-wrap: wrap; /* Permite que los elementos pasen a otra fila si no caben */
+  justify-content: flex-start; /* Coloca los elementos desde el principio de la fila */
   padding: 0 2rem;
   margin: 0 3rem;
   gap: 0 2rem;
@@ -36,82 +35,78 @@ nav ul {
 nav#horizontal ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
-  align-items: center;
-  height: auto;
-  min-height: 3.5rem;
-  padding: 0 2 rem;
-  margin: 0;
+  justify-content: flex-end;
+  height: auto; /* Permite que el menú crezca en altura cuando aparecen más filas */
+  min-height: 3.5rem; /* Permite que el menú crezca en altura cuando aparecen más filas */
+  padding: 0 2rem; /* Añade espacio interior a izquierda y derecha */
+  margin: 0; /* Elimina los márgenes exteriores */
   background-color: var(--third-color);
 }
 nav#vertical ul {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column; /* Coloca los elementos en columna */
+  justify-content: flex-start; /* Empieza a colocar los elementos desde arriba */
+  align-items: center; /* Centra los elementos horizontalmente */
   /* Afegir codi aquí per l'EXTRA */
 }
 li {
-  display: inline-block;
-  height: 100%;
+  display: inline-block; /* Permite que los elementos se comporten como bloques en línea */
+  height: 100%; /* Ocupa el 100% de la altura disponible */
 }
+
 nav#horizontal li {
-  flex: 0 0 10rem;
-  height: 3.5rem;
+  flex: 0 0 13rem; /* Impide que el elemento crezca o se reduzca y establece su anchura en 13rem */
+  height: 3.5rem; /* Establece la altura de cada elemento */
   background-color: var(--third-color);
   /* Afegir codi aquí */
 }
 nav#vertical li {
-  width: 100%;
+  width: 100%; /* Hace que cada elemento ocupe todo el ancho del menú vertical */
 }
-li:hover {
-  cursor: pointer;
+nav#horizontal li:hover {
+  cursor: pointer; /* Cambia el cursor para indicar que se puede pulsar */
   background-color: var(--fourth-color); /* #2E120C; */
 }
 li#logo {
   display: flex;
-  flex: 0 0 7rem;
+  flex: 0 0 7rem; /* Establece una anchura fija de 7rem */
   align-items: center;
-  justify-content: center;
-  margin-right: auto;
+  justify-content: center; /* Centra el logo horizontalmente */
+  margin-right: auto; /* Empuja los demás elementos hacia la derecha */
   /* Afegir codi aquí */
 }
 li#logo:hover {
   background-color: var(--third-color); /* #752E20; */
 }
 a {
-  color: inherit;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
+  color: inherit; /* Hereda el color del elemento que contiene el enlace */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  height: 100%; /* Ocupa toda la altura disponible */
+  width: 100%; /* Ocupa todo el ancho disponible */
 
   /* Afegir codi aquí */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;  /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente el contenido */
 }
-span.material-icons {
-  font-size: 2rem;
-}
+
 nav#horizontal img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 80%; /* Limita el ancho de la imagen al 80% de su contenedor */
+  max-height: 80%; /* Limita la altura de la imagen al 80% de su contenedor */
 }
 
 nav#vertical li.logo {
-  margin-right: 0;
-  margin-bottom: auto;
+  margin-right: 0;  /* Elimina el margen derecho del logo */
+  margin-bottom: auto;  /* Empuja los demás elementos hacia abajo */
 }
-/* Centrado del texto dentro de los enlaces */
-nav a span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+
+nav#horizontal li:not(#logo) img {
+    width: 3rem; /* establece el ancho de los iconos. */
+    height: 3rem;/* establece la altura de los iconos. */
 }
 
 nav#horizontal {
-  height:auto;
+  height:auto; /* Permite que el menú aumente su altura si los elementos bajan de fila */
   background-color: var(--fourth-color);
 }
 
