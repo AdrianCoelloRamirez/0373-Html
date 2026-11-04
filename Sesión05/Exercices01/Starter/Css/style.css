@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #EA5D40;
+  --second-color: #FCEEEB;
+  --third-color: #752E20;
+  --fourth-color: #2E120C;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--second-color); /* #FCEEEB; */
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+nav {
+  background-color: var(--third-color); /* #752E20; */
+  color: var(--second-color); /* #FCEEEB; */
+}
+nav#vertical { width: 20vw; }
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;   /* Alineación vertical */
+  list-style: none;
+  padding: 0 2rem;
+  margin: 0 3rem;
+  gap: 0 2rem;
+
+  /* Afegir codi aquí */
+}
+nav#horizontal ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  height: auto;
+  min-height: 3.5rem;
+  padding: 0 2 rem;
+  margin: 0;
+  background-color: var(--third-color);
+}
+nav#vertical ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* Afegir codi aquí per l'EXTRA */
+}
+li {
+  display: inline-block;
+  height: 100%;
+}
+nav#horizontal li {
+  flex: 0 0 10rem;
+  height: 3.5rem;
+  background-color: var(--third-color);
+  /* Afegir codi aquí */
+}
+nav#vertical li {
+  width: 100%;
+}
+li:hover {
+  cursor: pointer;
+  background-color: var(--fourth-color); /* #2E120C; */
+}
+li#logo {
+  display: flex;
+  flex: 0 0 7rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  /* Afegir codi aquí */
+}
+li#logo:hover {
+  background-color: var(--third-color); /* #752E20; */
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+
+  /* Afegir codi aquí */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span.material-icons {
+  font-size: 2rem;
+}
+nav#horizontal img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+nav#vertical li.logo {
+  margin-right: 0;
+  margin-bottom: auto;
+}
+/* Centrado del texto dentro de los enlaces */
+nav a span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+nav#horizontal {
+  height:auto;
+  background-color: var(--fourth-color);
+}
+
+nav#horizontal li:hover {
+  background-color: var(--third-color);
+}
+nav#horizontal li#logo:hover {
+  background-color: var(--third-color);
+}
