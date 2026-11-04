@@ -110,9 +110,6 @@ nav#horizontal {
   background-color: var(--fourth-color);
 }
 
-nav#horizontal li:hover {
-  background-color: var(--third-color);
-}
 nav#horizontal li#logo:hover {
   background-color: var(--third-color);
 }
