@@ -40,6 +40,6 @@ h1 {
 
 .grid-container-2 {
   display: grid;
-  grid-template-columns: repeat(5, minmax(60px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 17px; 
 }
