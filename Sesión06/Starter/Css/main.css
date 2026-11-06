@@ -15,7 +15,6 @@ h1 {
 .sub-item {
   background-color: rgb(253, 213, 197);
   padding: 1rem;
-
 }
 
 .grid-container {
@@ -28,33 +27,13 @@ h1 {
   grid-column: 1 / 4;
 }
 
-.item-4 {
-  align-self: flex-end;
-}
-
 .item-5 {
   grid-column: 1 / 4;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 5px;
-    
-}
-
-.item-1 {
-    grid-column: 1 / 4 ;
-}
-
-.item-5 {
-    grid-column: 1 / 4;
-}
-
 .grid-container-2 {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
     margin-top: -0.2rem;
 }
-

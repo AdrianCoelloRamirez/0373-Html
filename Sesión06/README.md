@@ -1,3 +1,33 @@
+Fase 1: Introducción a CSS Grid Layout
+
+Este repositorio contiene la solución correspondiente a la Fase 1 del proyecto de maquetación con CSS Grid. En esta etapa se establecen la estructura base del diseño, el comportamiento responsivo básico de las cuadrículas y las reglas globales de estilo.
+
+🛠️ Conceptos y Estilos Implementados
+
+En esta fase se trabajaron los siguientes aspectos técnicos en main.css:
+
+Reinicio de Caja Global:
+
+Implementación del modelo de caja universal con box-sizing: border-box; para un control preciso de bordes y márgenes internos.
+
+Tipografía y Elementos Base:
+
+Configuración de estilos para los encabezados principales (h1) asignando tamaño (1.5em) y peso tipográfico destacado (bold).
+
+Contenedores Principales en Grid:
+
+.grid-container: Definición de una rejilla de tres columnas mediante grid-template-columns: 1fr 2fr 1fr; con un espaciado intermedio (gap) de 5px.
+
+.grid-container-2: Configuración de una rejilla flexible de 5 columnas idénticas usando la función repeat(5, minmax(0, 1fr)); y un espacio entre celdas de 1rem.
+
+Posicionamiento y Extensión de Elementos (Grid Columns):
+
+Extensión horizontal completa de elementos destacados (.item-1 y .item-5) a lo largo de las 3 columnas del primer contenedor utilizando grid-column: 1 / 4;.
+
+Estilos Visuales:
+
+Uso de colores de fondo temáticos (lightsalmon e rgb(253, 213, 197)) y rellenos proporcionales (padding) para distinguir áreas principales y subelementos (.grid-item y .sub-item).
+
 Fase Avanzada: Reset Global, Alineaciones y Rejilla Compleja
 
 Este repositorio contiene la documentación de la Fase Avanzada del proyecto de maquetación con CSS Grid. En esta iteración se implementa un reset global de márgenes, alineaciones individuales dentro de la rejilla principal y la reestructuración de la rejilla secundaria a 5 columnas.
@@ -46,14 +76,11 @@ Simplificación de Rellenos Internos (.sub-item):
 
 Se unifica el padding de los subelementos a un valor limpio de 1rem, eliminando las reglas duplicadas previas.
 
+
 📁 Estructura del Archivo CSS (main.css)
 
 * {
   box-sizing: border-box;
-
-  margin: 0;
-  padding: 0;
-
 }
 
 h1 {
@@ -72,10 +99,7 @@ body {
 
 .sub-item {
   background-color: rgb(253, 213, 197);
-  padding: 0.8rem;
-  margin-top: -0.3rem;
   padding: 1rem;
-
 }
 
 .grid-container {
@@ -86,10 +110,6 @@ body {
 
 .item-1 {
   grid-column: 1 / 4;
-}
-
-.item-4 {
-  align-self: flex-end;
 }
 
 .item-5 {
@@ -105,6 +125,10 @@ body {
 
 
 🚀 Instrucciones de Uso
+
+Clonar el repositorio localmente o cambiar a la rama feat/fase-1.
+
+Abrir el archivo index.html en el navegador o mediante la extensión Live Server de Visual Studio Code para visualizar la estructura en rejilla.
 
 Cambiar a la rama avanzada mediante git checkout feat/advanced (o hazaña/avanzado).
 
