@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form method="get" action="saludo.html">
+            <label for="inputNombre">nombre</label> 
+            <input required type="text" id="inputNombre" name="nameNombre">
+            email
+            <input type="email" id="inputEmail" name="nameEmail">
+            edad
+            <input type="text" id="inputEdad" name="nameEdad">
+            
+            <fieldset>
+                <legend>Pokemon capturado</legend>
+                <input type="checkbox" value="squirtle" name="pokemonCheck" id="squirtleCheck">
+                <label for="squirtleCheck">squirtle</label>
+                <input type="checkbox" value="bulbasur" name="pokemonCheck" id="bulbasurCheck">
+                <label for="bulbasurCheck">bulbasur</label>
+                <input type="checkbox" value="charmander" name="pokemonCheck" id="charmanderCheck">
+                <label for="charmanderCheck">charmander</label>
+            </fieldset>
+            <fieldset>
+                <legend>Pokemon capturado</legend>
+                <input type="radio" value="squirtle" name="pokemonRadio" id="squirtleRadio">
+                <label for="squirtleRadio">squirtle</label>
+                <input type="radio" value="bulbasur" name="pokemonRadio" id="bulbasurRadio">
+                <label for="bulbasurRadio">bulbasur</label>
+                <input type="radio" value="charmander" name="pokemonRadio" id="charmanderRadio">
+                <label for="charmanderRadio">charmander</label>
+            </fieldset>
+            <div class="buttons">
+                <button type="reset">Borrar</button>
+                <button>Enviar</button>
+            </div>
+        </form>
+
+
+    </main>
+</body>
+</html>

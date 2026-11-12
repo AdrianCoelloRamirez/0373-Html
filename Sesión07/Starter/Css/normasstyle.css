@@ -1,0 +1,67 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(https://img.freepik.com/premium-vector/law-justice-concept-with-judges-gavel_1334819-15371.jpg?w=2000);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.normas {
+    background-color: #a78bfa;
+    color: #18181b;
+    width: 100%;
+    max-width: 700px;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 5px solid #8471d7;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    border-bottom: 2px solid #18181b;
+    padding-bottom: 0.5rem;
+}
+
+p, li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #18181b;
+    color: #f8fafc;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.volver:hover {
+    background-color: #334155;
+    color: #38bdf8;
+}

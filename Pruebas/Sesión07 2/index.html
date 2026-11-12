@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form method="get" action="saludo.html">
+            <label for="inputNombre">nombre</label> 
+            <input required type="text" id="inputNombre" name="nameNombre">
+            <label for="inputEmail">email</label>
+            <input type="email" id="inputEmail" name="nameEmail">
+            <label for="inputEdad">edad</label>
+            <input type="text" id="inputEdad" name="nameEdad">
+            <label for="inputButton">button</button></label>
+            <input type="button" value="Ir a saludos" onclick="window.location.href='saludos.html';" id="inputButton" name="nameButton">
+            <label for="inputColor">color</label>
+            <input type="color" id="inputColor" name="nameColor">
+            <label for="inputDate">date</label>
+            <input type="date" id="inputDate" name="nameDate">
+            <label for="inputDateTimeLocal">datetimelocal</label>
+            <input type="datetime-local" id="inputDateTimeLocal" name="nameDateTimeLocal">
+            <label for="inputFile">file</label>
+            <input type="file" id="inputFile" name="nameFile">
+            <label for="inputHidden">hidden</label>
+            <input type="hidden" id="inputHidden" name="nameHidden">
+            <label for="inputImage">image</label>
+            <input type="image" id="inputImage" name="nameImage">
+            <label for="inputMonth">month</label>
+            <input type="month" id="inputMonth" name="nameMonth">
+            <fieldset>
+                <legend>Pokemon capturado</legend>
+                <input type="checkbox" value="squirtle" name="pokemonCheck" id="squirtleCheck">
+                <label for="squirtleCheck">squirtle</label>
+                <input type="checkbox" value="bulbasur" name="pokemonCheck" id="bulbasurCheck">
+                <label for="bulbasurCheck">bulbasur</label>
+                <input type="checkbox" value="charmander" name="pokemonCheck" id="charmanderCheck">
+                <label for="charmanderCheck">charmander</label>
+        
+            </fieldset>
+            <fieldset>
+                <legend>Pokemon capturado</legend>
+                <input type="radio" value="squirtle" name="pokemonRadio" id="squirtleRadio">
+                <label for="squirtleRadio">squirtle</label>
+                <input type="radio" value="bulbasur" name="pokemonRadio" id="bulbasurRadio">
+                <label for="bulbasurRadio">bulbasur</label>
+                <input type="radio" value="charmander" name="pokemonRadio" id="charmanderRadio">
+                <label for="charmanderRadio">charmander</label>
+            </fieldset>
+            <select name="pokemonselect" id="selectPokemon">
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+                <option value="25">pikachu</option>
+            </select>
+            <div class="buttons">
+                <button type="reset">Borrar</button>
+                <button>Enviar</button>
+            </div>
+        </form>
+
+
+    </main>
+</body>
+</html>

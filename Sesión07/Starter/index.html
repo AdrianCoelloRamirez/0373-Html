@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción TwitchRivals</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <main class="formulario">
+    <header>
+      <h1>Twitch Rivals 2026</h1>
+      <p><strong>Pon tus datos para reserver una plaza en la competición</strong></p>
+    </header>
+
+    <form action="twitchrivalsbasededatos.html" method="get">
+      
+      <fieldset>
+        <legend><u><em><strong>Datos Personales</strong></em></u></legend>
+
+        <div class="bloqueformulario">
+          <label for="inputNombre">Nombre completo<span class="marcaroja">*</span></label>
+          <input type="text" class="fondocuadrados" id="inputNombre" name="nameNombre" required>
+        </div>
+
+        <div class="bloqueformulario">
+          <label for="inputEmail">Correo electrónico<span class="marcaroja">*</span></label>
+          <input type="email" class="fondocuadrados" id="inputEmail" name="nameEmail" required>
+        </div>
+
+        <div class="bloqueformulario">
+          <label for="inputNickame">Nombre del jugador (Nickname)<span class="marcaroja">*</span></label>
+          <input type="text" class="fondocuadrados" id="inputNickame" name="nameNickname" minlength="3" maxlength="15" required>
+        </div>
+
+        <div class="bloqueformulario">
+          <label for="inputPassword">Contraseña (máximo 20 caracteres)<span class="marcaroja">*</span></label>
+          <input type="password" class="fondocuadrados" id="inputPassword" name="namePassword" minlength="8" maxlength="20" required>
+        </div>
+
+        <div class="bloqueformulario">
+          <label for="inputEdad">Edad (mínimo 16 años)</label>
+          <input type="number" class="fondocuadrados" id="inputEdad name="nameEdad" min="16" max="99">
+        </div>
+
+        <div class="bloqueformulario">
+          <label for="inputFechaNacimiento">Fecha de nacimiento</label>
+          <input type="date" class="fondocuadrados" id="inputFechaNacimiento" name="nameFechaNacimiento">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend><u><em><strong>Detalles de Competición</strong></em></u></legend>
+
+        <div class="bloqueformulario">
+          <label for="selectVideojuego">Videojuego del torneo</label>
+          <select class= "fondocuadrados" id="selectVideojuego" name="nameVideojuego">
+            <option value="">-- Selecciona un juego --</option>
+            <option value="valorant">Valorant</option>
+            <option value="lol">League of Legends</option>
+            <option value="fc26">FC 26</option>
+            <option value="rocketleague">Rocket League</option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pokemon">Pokemon</option>
+          </select>
+        </div>
+
+        <div class="bloqueformulario">
+          <label>Plataforma (selección única)</label>
+          <div class="opcionesformulario">
+            <label class="opcionesconf" for="inputPlatPc">
+            <input type="radio" id="inputPlatPc" name="namePlataforma" value="pc"> PC
+            </label>
+            <label class="opcionesconf" for="inputPlatPs">
+            <input type="radio" id="inputPlatPs" name="namePlataforma" value="playstation"> PlayStation
+             </label>
+            <label class="opcionesconf" for="inputPlatXbox">
+            <input type="radio" id="inputPlatXbox" name="namePlataforma" value="xbox"> Xbox
+            </label>
+            <label class="opcionesconf" for="inputPlatNintendo">
+            <input type="radio" id="inputPlatNintendo" name="namePlataforma" value="xbox"> NintendoSwitch 2
+            </label>
+          </div>
+        </div>
+
+        <div class="bloqueformulario">
+          <label>Disponibilidad horaria (selección múltiple)</label>
+          <div class="opcionesformulario">
+            <label class="opcionesconf" for="inputDispManana">
+            <input type="checkbox" id="inputDispManana" name="nameDisponibilidad" value="manana"> Mañana
+            </label>
+            <label class="opcionesconf" for="inputDispTarde">
+            <input type="checkbox" id="inputDispTarde" name="nameDisponibilidad" value="tarde"> Tarde
+            </label>
+            <label class="opcionesconf" for="inputDispNoche">
+            <input type="checkbox" id="inputDispNoche" name="nameDisponibilidad" value="noche"> Noche
+            </label>
+          </div>
+        </div>
+
+        <div class="bloqueformulario">
+          <label for="textareaComentarios">Comentarios adicionales</label>
+          <textarea class="fondocuadrados" id="textareaComentarios" name="nameComentarios"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="bloqueformulario terminos">
+        <input type="checkbox" id="normas" name="acepta_normas" required>
+        <label for="normas">He leído y acepto las <a href="normas.html"><strong>normas de TwitchRivals (TR)</strong></a> <span class="marcaroja">*</span></label>
+      </div>
+
+      <div class="botones">
+        <button type="submit"><strong>Inscribirse</strong></button>
+        <button type="reset"><strong>Limpiar formulario</strong></button>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>

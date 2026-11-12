@@ -1,0 +1,191 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(https://d1lss44hh2trtw.cloudfront.net/resize?type=webp&url=https:%2F%2Fshacknews-www.s3.amazonaws.com%2Fassets%2Feditorial%2F2019%2F09%2Ftwitch-rivals-day-one.jpg&width=986&sign=KP2RlyZcTmaQ0uRfqORoBrE9BtYj6vGTQ-rzmMWkPp0);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 0;
+}
+
+    
+.formulario {
+    background-color: #a78bfa ;
+    
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 5px solid #8471d7;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #18181b;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: 2px solid #18181b;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    padding: 0 1rem;
+    color: #18181b;
+    font-size: 1rem;
+}
+
+.bloqueformulario {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloqueformulario:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #dde1e6;
+}
+
+.marcaroja {
+    color: #f43f5e;
+    margin-left: 8px;
+}
+
+.fondocuadrados{
+    background-color: #18181b;
+    border: 1.5px solid #334155;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    color: #f8fafc;
+    font-size: 0.9rem;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+}
+
+.fondocuadrados:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 10px rgba(56, 189, 248, 0.25);
+    }
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.opcionesformulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.25rem;
+}
+
+.opcionesconf {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: normal;
+    color: #dde1e6;
+}
+
+.opcionesconf:hover {
+    color: #7dd3fc; /* Cambia el texto a un tono azulado brillante */
+    transition: color 0.2s ease;
+}
+
+.opcionesconf input {
+    accent-color: #310fcc;
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+.terminos {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.terminos label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.terminos a {
+    color: #4d4ddd;
+    text-decoration: underline;   
+}
+
+.terminos a:hover {
+    color: #7dd3fc;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.botones button {
+    flex: 1 1 140px; 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+
+.botones button:first-child {
+    background-color: #2195cf;
+    color: #ffffff;
+}
+
+.botones button:first-child:hover {
+      background-color: #0369a1;      
+      box-shadow: 0 6px 30px rgba(2, 132, 199, 0.4);
+    }
+
+    /* Botón secundario (Reset) */
+.botones button:nth-child(2) {
+      background-color: #b6b4ba;
+      color: #ffffff;
+      border: 1.5px solid #c7c2cd;
+    }
+
+.botones button:nth-child(2):hover {
+      background-color: #334155;
+      box-shadow: 0 6px 30px rgba(2, 132, 199, 0.4);
+      border: 1.5px solid #334155;
+    }
+  
