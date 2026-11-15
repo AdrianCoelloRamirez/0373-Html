@@ -127,6 +127,18 @@ textarea {
     cursor: pointer;
 }
 
+#inputPlatPc {
+    accent-color: grey;
+}
+
+#inputPlatXbox {
+    accent-color: #107C10;
+}
+
+#inputPlatNintendo {
+    accent-color: #E60012;
+}
+
 .terminos {
     flex-direction: row;
     align-items: center;
@@ -188,4 +200,3 @@ textarea {
       box-shadow: 0 6px 30px rgba(2, 132, 199, 0.4);
       border: 1.5px solid #334155;
     }
-  
