@@ -1,0 +1,48 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: consolas,monospace, sans-serif;
+}
+
+.blue, .yellow, .red{
+    padding: 1em;
+}
+
+.blue{
+    background-color: rgb(123, 123, 218);
+    border: 3px solid blue;
+}
+
+.red{
+    background-color: rgb(216, 115, 115);
+    border: 3px solid red;
+}
+
+.yellow{
+    background-color: rgb(219, 219, 100);
+    border: 3px solid yellow;
+}
+
+.red{
+    /* margin: 10px 0 0 10px; */
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.blue{
+    /* margin: 10px 0 0 10px; */
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.yellow{
+    /* margin: 10px 0 0 10px; */
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
